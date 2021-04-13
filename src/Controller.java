@@ -10,7 +10,7 @@ public static void main(String[] args) {
 	String read;
 	int option;
 	double value;
-	int number;
+	int number,number2;
 	
 	System.out.println("enter with the account holder");
 	
@@ -18,7 +18,7 @@ public static void main(String[] args) {
 	
 	read= scan.nextLine();
 	
-	Conta c1;
+	Conta c1,c2;
 	
 	do{
 		System.out.println("");
@@ -27,6 +27,7 @@ public static void main(String[] args) {
 		System.out.println("2) dados bancarios ");
 		System.out.println("3) deposito");
 		System.out.println("4) saque ");
+		System.out.println("5) transfer");
 		System.out.println("0) sair");
 		
 		System.out.println("option");
@@ -66,6 +67,20 @@ public static void main(String[] args) {
             System.out.println("digite o valor de saque");
             value = scan.nextDouble();
             c1.Sacar(value);
+            break;
+            
+        case 5:
+            System.out.println("digite a conta de origem");
+            number = scan.nextInt();
+            c1 = lc.get(number - 1);
+            
+            System.out.println("digite a conta de destino");
+            number2 = scan.nextInt();
+            c2 = lc.get(number2 - 1);
+        
+            System.out.println("digite o valor de transfer");
+            value = scan.nextDouble();
+            c1.Transfer(c2,value);
             break;
 
         default:
