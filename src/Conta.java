@@ -1,5 +1,4 @@
 
-
 public class Conta {
 	
 	
@@ -21,10 +20,10 @@ public class Conta {
 	//
 	public void  dadosBancarios() {
 	System.out.println("");
-	System.out.println("--dados bancarios--");
-	System.out.println("--numero-- " + this.numero);
-	System.out.println("--titular-- "+ this.titular);
-	System.out.println("--saldo-- "  +this.saldo);
+	System.out.println("--Bank data--");
+	System.out.println("--number-- " + this.numero);
+	System.out.println("--holder-- "+ this.titular);
+	System.out.println("--balance-- "  +this.saldo);
 	
 	}
 	
